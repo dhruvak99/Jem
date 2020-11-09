@@ -23,7 +23,7 @@ public class Jem {
             refer https://www.freebsd.org/cgi/man.cgi?query=sysexits&apropos=0&sektion=0&manpath=FreeBSD+4.3-RELEASE&format=html
             for more info
             */
-            System.exit(64);
+            System.exit(64); //EX_USAGE
             //64 is for wrong number of arguments, bad flag
         }else if(args.length == 1)
         {
@@ -38,7 +38,7 @@ public class Jem {
         run(new String(bytes,Charset.defaultCharset())); // default charset used in the machine Charset.defaultcharset()
 
         //if has error stop execution
-        if(hadError) System.exit(65);
+        if(hadError) System.exit(65); //EX_DATAERR
         //65 is for incorrect data
 
     }
