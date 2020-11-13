@@ -10,5 +10,7 @@ public class Parser {
     {
         this.tokens = tokens;
     }
-
+    private Expr expression(){
+        return equality();
+    }
 }
