@@ -21,4 +21,17 @@ public class Parser {
 
         return expr;
     }
+
+    private boolean match(TokenTypes... types)
+    {
+        for(TokenTypes type:types)
+        {
+            if(check(type))
+            {
+                advance();
+                return true;
+            }
+        }
+        return false;
+    }
 }
