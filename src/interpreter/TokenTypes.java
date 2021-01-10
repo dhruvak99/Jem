@@ -9,7 +9,7 @@ public enum TokenTypes {
     //literals : number , strings etc
     IDENTIFIER, STRING, NUMBER,
     //keywords
-    AND,ELSE,FALSE,FUNCTION,FOR,IF,NIL,OR,PRINT,RETURN,TRUE,VAR,WHILE,
+    AND,ELSE,FALSE,FUNCTION,FOR,IF,NIL,OR,PRINT,RETURN,TRUE,VAR,WHILE,CLASS,THIS,SUPER,
     //end of file token
     EOF
 

@@ -6,7 +6,7 @@ public class JemFunction implements JemCallable{
     private final Stmt.Function declaration;
     private final Environment closure;
     private final boolean isInitializer;
-    LoxFunction(Stmt.Function declaration, Environment closure,boolean isInitializer){
+    JemFunction(Stmt.Function declaration, Environment closure,boolean isInitializer){
         this.isInitializer = isInitializer;
         this.closure = closure;
         this.declaration = declaration;
